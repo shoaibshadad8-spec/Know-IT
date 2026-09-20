@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know IT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-primary" href="#">KNOW IT</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- قسم الأخبار -->
+            <main class="col-8">
+                <h2 class="text-primary mb-3">Sports News</h2>
+                <div class="row" id="sports-news">
+                    <!-- سيتم تعبئة الأخبار ديناميكياً -->
+                    <div class="col-4 mb-3">
+                        <img src="news.jpg" class="img-fluid rounded mb-2" alt="News">
+                        <h5>Loading news...</h5>
+                        <p class="text-muted small">Today | <span class="badge bg-success">NewsAPI</span></p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- الشريط الجانبي -->
+            <aside class="col-4">
+                <!-- قسم الطقس -->
+                <section id="temp" class="text-center p-3 border rounded bg-white mb-4 shadow-sm">
+                    <img src="weather.png" class="img-fluid mb-2" style="width: 50px;" alt="Weather">
+                    <h2 class="display-6" id="temperature">--°C</h2>
+                    <h3 class="text-muted fs-5" id="city-name">Asyut</h3>
+                </section>
+
+                <!-- قسم العملات -->
+                <section class="p-3 border rounded bg-white mb-4 shadow-sm">
+                    <h4 class="text-primary mb-3">Currency Rates</h4>
+                    <p class="mb-1"><strong>USD:</strong> 51.59</p>
+                    <p class="mb-0"><strong>EUR:</strong> 58.40</p>
+                </section>
+
+                <!-- قسم المباريات -->
+                <section id="live-matches" class="p-3 border rounded bg-white mb-4 shadow-sm">
+                    <h4 class="mb-3 text-primary">Live Matches</h4>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Team 1</span>
+                        <img src="match.png" style="width: 25px;" alt="VS">
+                        <span class="fw-bold text-danger">0 : 0</span>
+                        <img src="match.png" style="width: 25px;" alt="VS">
+                        <span>Team 2</span>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-info py-2 text-center text-white">
+        <p class="mb-0">All Rights reserved to Know IT 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
