@@ -1,9 +1,24 @@
 body {
     background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
-aside section {
-    transition: transform 0.2s;
+
+header nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-aside section:hover {
-    transform: translateY(-2px);
+
+.card, aside section, main {
+    transition: transform 0.2s ease;
+}
+
+/* تنسيق صور الأخبار لتكون متناسقة */
+#sports-news img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* تنسيق الـ Footer */
+footer {
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
